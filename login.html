@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Pet-ER Web App</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="h1 p-3 text-center">This is header</header>
+    <div class="p-3 login_container">
+        <h1 class="text-center">This is section with background</h1>
+        <h1 class="m-4 text-center"> Welcome to Pet appointment</h1>
+
+        <label for="user_email" class="label_css">Email:</label>
+        <input type="email" name="user_email" placeholder="Enter your email" id="user_email" class="login_elem">
+
+        <label for="user_password" class="label_css">Password:</label>
+        <input type="password" name="user_password" placeholder="Enter your password" id="user_password" class="login_elem">
+        
+        <a href="" class="login_elem mt-4">Forgot Password?</a>
+        <a href="" class="login_elem" onclick="alert(reg_pop());">Register a new account</a>
+    </div>
+    <footer class="p-3">
+        <h1>Copyright 2022</h1>
+    </footer>
+</body>
+<script>
+    var reg_pop = () => {
+        return "Modal will be added soon"
+    };
+</script>
+<script src="js/bootstrap.min.js"></script>
+</html>
