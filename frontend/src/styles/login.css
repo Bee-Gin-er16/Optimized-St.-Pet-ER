@@ -1,0 +1,59 @@
+:root {
+    --default-font: "Poppins", sans-serif;
+    --border-check: 1px solid red;
+    --height-space: 10dvh;
+}
+
+* {
+    font-family: var(--default-font);
+}
+
+header, a{
+    text-align: center;
+}
+
+form h1{
+    color: red;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    padding: 1dvh 0dvh;
+}
+
+input {
+    display: inline;
+    height: 4dvh;
+    font-size: medium;
+    width: 30dvw;
+}
+
+.logcontainer {
+    display: grid;
+    place-content: center;
+    background-color: azure;
+    border: 1px solid black;
+    margin: 10dvh 30dvw 10dvh 30dvw;
+    align-items: center;
+    padding: 12dvh;
+}
+
+input[type="submit"] , button{
+    margin: 4dvh 5dvw 0 5dvw;
+    height: 5dvh;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 20dvw;
+}
+
+button {
+    margin: 2dvh 5dvw;
+    background-color: rgb(185, 180, 180);
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+a {
+    margin-top: 1dvh;
+}
