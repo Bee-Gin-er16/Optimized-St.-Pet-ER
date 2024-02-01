@@ -36,7 +36,7 @@ input {
     border: 1px solid black;
     margin: 10dvh 30dvw 10dvh 30dvw;
     align-items: center;
-    padding: 12dvh;
+    padding: 5dvh;
 }
 
 input[type="submit"] , button{
@@ -51,7 +51,6 @@ button {
     margin: 2dvh 5dvw;
     background-color: rgb(185, 180, 180);
     border: 1px solid gray;
-    box-sizing: border-box;
 }
 
 a {

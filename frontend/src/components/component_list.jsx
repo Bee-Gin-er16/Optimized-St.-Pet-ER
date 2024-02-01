@@ -1,5 +1,16 @@
 import {useState, useEffect} from "react";
 import '../styles/login.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+const Header = () => {
+  return (
+    <>
+    <header>
+      <h1>This is header for icon/hero icon</h1>
+    </header>
+    </>
+  );
+}
 
 const Login = () => {
     const [Email, setEmail] = useState('');
@@ -23,8 +34,6 @@ const Login = () => {
 
     return (
         <>
-        <header><h1>This is header for icon/hero icon</h1></header>
-
         <form className="logcontainer">
           <h1>Sign in to get started</h1>
 
@@ -59,4 +68,34 @@ const Counter = () => {
     ); 
 }
 
-export {Login, Counter}
+const Register = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [pass, setPass] = useState('')
+
+  const none = (e) => {
+    e.preventDefault(); 
+    console.log(name);
+  }
+
+  return (
+    <>
+    <form className="logcontainer">
+      <h1>Register to get started <br></br>or<br></br> Use an email</h1>
+      <label htmlFor="name">Name:</label>
+      <input type="text" placeholder="Enter your name"
+      onChange={(e) => setName(e.target.value)}/>
+      <label htmlFor="name">Email:</label>
+      <input type="text" placeholder="Enter email"
+      onChange={(e) => setEmail(e.target.value)}/>
+      <label htmlFor="name">Password:</label>
+      <input type="text" placeholder="Enter password "
+      onChange={(e) => setPass(e.target.value)}/>
+      <button onClick={none} >Submit</button>
+      {/* <FontAwesomeIcon icon="fa-brands fa-google" /> */}
+    </form>
+    </>
+  )
+}
+
+export {Login, Counter, Register, Header}
