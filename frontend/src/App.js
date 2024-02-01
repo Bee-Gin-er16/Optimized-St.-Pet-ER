@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Header/>
       {/* <Intro /> */}
-      <Login/>
-      {/* <Register/> */}
+      {/* <Login/> */}
+      <Register/>
       {/* <Register/> */}
       {/* <Counter/> */}
     </div>

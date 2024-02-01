@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import '../styles/login.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
   return (
@@ -92,7 +93,12 @@ const Register = () => {
       <input type="text" placeholder="Enter password "
       onChange={(e) => setPass(e.target.value)}/>
       <button onClick={none} >Submit</button>
-      {/* <FontAwesomeIcon icon="fa-brands fa-google" /> */}
+
+      <div className="icon-wrapper">
+        <h3>Continue using Gmail Account</h3>
+        <FontAwesomeIcon icon={faGoogle} size="2xl"/>
+      </div>
+      
     </form>
     </>
   )
