@@ -3,7 +3,8 @@
 //Component imports
 // import Intro from './pages/Intro_page'
 // Login, Counter
-import {Login, Header, Register} from './components/component_list';
+import { Header } from './components/dashboard_comps';
+import { Register } from './components/login_forms';
 
 function App() {
   return (

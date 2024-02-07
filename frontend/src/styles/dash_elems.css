@@ -1,0 +1,19 @@
+:root {
+    --default-font: "Poppins", sans-serif;
+    --border-check: 1px solid red;
+    --height-space: 10dvh;
+}
+
+* {
+    font-family: var(--default-font);
+}
+
+h1,header {
+    text-align: center;
+}
+
+header {
+    padding: 2dvh 0;
+    width: 100%;
+    background-color: aquamarine;
+}
