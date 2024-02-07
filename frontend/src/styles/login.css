@@ -8,12 +8,7 @@
     font-family: var(--default-font);
 }
 
-header, a{
-    text-align: center;
-}
-
-form h1{
-    color: red;
+form h1, h3, header, a{
     text-align: center;
 }
 
@@ -40,7 +35,7 @@ input {
 }
 
 input[type="submit"] , button{
-    margin: 4dvh 5dvw 0 5dvw;
+    margin: 5dvh 5dvw 0 5dvw;
     height: 5dvh;
     font-weight: bold;
     text-transform: uppercase;
@@ -55,4 +50,26 @@ button {
 
 a {
     margin-top: 1dvh;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 20dvw;
+}
+
+.icon-wrapper label {
+    display: inline;
+    padding-left: 2dvw;
+}
+
+button.placement{
+    display: grid;
+    place-content: center;
+    padding: 20px;
+    background-color: rgb(185, 180, 180);
+    border: 1px solid black;
+    border-radius: 20px;
 }

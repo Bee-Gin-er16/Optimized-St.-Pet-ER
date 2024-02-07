@@ -93,11 +93,14 @@ const Register = () => {
       <input type="text" placeholder="Enter password "
       onChange={(e) => setPass(e.target.value)}/>
       <button onClick={none} >Submit</button>
+      <h3>Register using Gmail Account</h3>
 
-      <div className="icon-wrapper">
-        <h3>Continue using Gmail Account</h3>
-        <FontAwesomeIcon icon={faGoogle} size="2xl"/>
-      </div>
+      <button className="placement">
+        <div className="icon-wrapper">
+          <FontAwesomeIcon icon={faGoogle} size="2xl"/>
+          <label htmlFor="login_google">Login using Google</label>
+        </div>
+      </button>
       
     </form>
     </>
