@@ -6,15 +6,24 @@
 import { Header } from './components/dashboard_comps';
 import { Login } from './components/login_form';
 import { Register } from './components/registration_form';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const myroute = createBrowserRouter([
+  {
+    path: "/",
+    element: <Login/>
+  },
+  {
+    path: "/register",
+    element: <Register/>
+  }
+]);
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      {/* <Intro /> */}
-      {/* <Login/> */}
-      <Register/>
-      {/* <Counter/> */}
+      <RouterProvider router={myroute}/>
     </div>
   );
 }

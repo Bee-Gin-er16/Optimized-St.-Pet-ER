@@ -37,7 +37,7 @@ input {
 }
 
 input[type="submit"] , button{
-    margin: 5dvh 5dvw 0 5dvw;
+    margin: 1dvh 5dvw 0 5dvw;
     height: 5dvh;
     font-weight: bold;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ button {
 }
 
 a {
-    margin-top: 1dvh;
+    margin: 2dvh;
 }
 
 .icon-wrapper {

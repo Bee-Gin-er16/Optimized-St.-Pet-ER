@@ -36,15 +36,15 @@ const Login = () => {
           <input type="password" value={Pass}
           placeholder="Your Password" className="logpass"
           onChange={(e) => setPass(e.target.value)}/>
-
+          <a href="/#">Forgot Password?</a>
           <input type="submit" value="Login" onClick={out}></input>
           {/* <Link to="/registration_form">
           </Link> */}
           <button>Register</button>
-          <a href="/#">Forgot Password?</a>
+          
         </form>
         </>
     )
 }
 
-export default Login
+export {Login}
