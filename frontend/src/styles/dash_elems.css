@@ -1,5 +1,5 @@
 :root {
-    --default-font: "Poppins", sans-serif;
+    --default-font: Arial, Helvetica, sans-serif;
     --border-check: 1px solid red;
     --height-space: 10dvh;
 }
@@ -15,5 +15,6 @@ h1,header {
 header {
     padding: 2dvh 0;
     width: 100%;
-    background-color: aquamarine;
+    background: rgb(13,132,4);
+    background: linear-gradient(0deg, rgba(13,132,4,0.9921218487394958) 0%, rgba(69,162,39,1) 56%, rgba(141,201,83,1) 100%);
 }

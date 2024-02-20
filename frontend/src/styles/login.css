@@ -8,7 +8,7 @@
     font-family: var(--default-font);
 }
 
-form h1, h3, a{
+form h1, h2, h3, a{
     text-align: center;
 }
 
@@ -29,8 +29,8 @@ input {
     place-content: center;
     background-color: azure;
     border-radius: 20px;
-    border: 1px solid black;
-    margin: 5dvh 30dvw 10dvh 30dvw;
+    /* border: 1px solid black; */
+    margin: 10dvh 30dvw 0 30dvw;
     align-items: center;
     padding: 5dvh;
     box-shadow: 5px 8px #888888
