@@ -3,7 +3,7 @@
 //Component imports
 // import Intro from './pages/Intro_page'
 // Login, Counter
-import { Header } from './components/dashboard_comps';
+import { Header, Home } from './components/dashboard_comps';
 import { Login } from './components/login_form';
 import { Register } from './components/registration_form';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -16,13 +16,17 @@ const myroute = createBrowserRouter([
   {
     path: "/register",
     element: <Register/>
+  },
+  {
+    path: "/home",
+    element: <Home isLoggedIn={true}/>
   }
 ]);
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header name="" />
       <RouterProvider router={myroute}/>
     </div>
   );

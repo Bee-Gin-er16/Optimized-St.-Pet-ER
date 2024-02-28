@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./img/sunset.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100dvw 100dvh;
 }
 
 code {

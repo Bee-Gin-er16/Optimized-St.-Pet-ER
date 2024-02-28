@@ -28,14 +28,13 @@ const Login = () => {
         <>
         <form className="logcontainer">
           <h1>Sign in to get started</h1>
+          
           <label htmlFor="Email">Email:</label>
-          <input type="email" value={Email} 
-          placeholder="Your Email" className="logemail"
-          onChange={(e) => setEmail(e.target.value)}/>
+          <input type="email" placeholder="Example@gmail.com" className="logemail" onChange={(e) => setEmail(e.target.value)}/>
+
           <label htmlFor="Pass">Password:</label>
-          <input type="password" value={Pass}
-          placeholder="Your Password" className="logpass"
-          onChange={(e) => setPass(e.target.value)}/>
+          <input type="password" placeholder="Enter your password" className="logpass" onChange={(e) => setPass(e.target.value)}/>
+
           <a href="/#">Forgot Password?</a>
           <input type="submit" value="Login" onClick={out}></input>
           {/* <Link to="/registration_form">

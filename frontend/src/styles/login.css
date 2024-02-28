@@ -10,6 +10,7 @@
 
 form h1, h2, h3, a{
     text-align: center;
+    padding: 2dvh 0;
 }
 
 label {
