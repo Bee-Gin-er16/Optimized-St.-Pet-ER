@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import '../styles/dash_elems.css';
-import Logo from '../img/Logo.png'
+import Logo from '../img/Logo.png';
+import default_profile from "../img/pet_and_owner.jpg";
 
 const Header = (props) => {
   return (
@@ -42,9 +43,38 @@ const Home = (props) => {
     <>
     <div className="homepage">
       <h1>This is home</h1>
-      {(props.isLoggedIn)? <h2 style={{color: "green"}}>Welcome user</h2>: <h2 style={{color: "red"}}>You are not authorized to access this without logging in</h2>}
+      {(props.isNotLoggedIn)? <h2 style={{color: "red"}}>You are not authorized to access this without logging in</h2>:
+      <h2 style={{color: "green"}}>Welcome user</h2>}
     </div>
     </>
   );
 }
-export {Counter, Header, Home}
+
+const Profile = () => {
+  return (
+    <>
+    <div className="profile_contents">
+
+      <div className="user_profile">
+        <div className="profile_bg">
+          <div className="profile_img">
+            <img src={default_profile} alt="user_profile_picture"/> 
+          </div>
+          <div className="profile_creds">
+            <h1>ADAM BLACK</h1>
+            <h2>Address:</h2>
+            <h2>Status:</h2>
+            <h2>Gender:</h2>
+          </div>
+        </div>
+      </div>
+
+      <div className="pet_profile">
+        <h1>This is pet profile</h1>
+      </div>
+    </div>
+    </>
+  );
+}
+
+export {Counter, Header, Home, Profile}

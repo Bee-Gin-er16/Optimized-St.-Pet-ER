@@ -1,6 +1,8 @@
 :root {
     --default-font: Arial, Helvetica, sans-serif;
-    --border-check: 1px solid red;
+    --border-check: 2px solid red;
+    --border-check2: 2px solid blue;
+    --border-check3: 2px solid orange;
     --height-space: 10dvh;
     --space-header-elem: 6dvw
 }
@@ -9,7 +11,7 @@
     font-family: var(--default-font);
 }
 
-h1,header {
+.homepage h1,header {
     text-align: center;
 }
 
@@ -54,4 +56,50 @@ nav ul:hover{
     background-color: white;
     margin: 0 var(--space-header-elem) ;
     height: 90dvh;
+}
+
+.profile_contents {
+    display: flex;
+    border: var(--border-check);
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.user_profile {
+    border: var(--border-check2);
+    flex: 1;
+    background-color: white;
+}
+
+.pet_profile {
+    border: var(--border-check3);
+    flex: 1;
+    background-color: skyblue;
+}
+
+.profile_bg {
+    background-color: aquamarine;
+    margin: 2vh 1dvw;
+    border-radius: 12px;
+}
+
+.profile_img {
+    display: inline-block;
+}
+
+.profile_cred {
+    display: inline-block;
+}
+
+.profile_img img{
+    display: inline;
+    border-radius: 30px;
+    margin: 2dvh 2dvw;
+    height: 25dvh;
+    width: 10dvw;
+}
+
+.user_profile h1{
+    display: inline;
+    font-weight: bold;
 }
