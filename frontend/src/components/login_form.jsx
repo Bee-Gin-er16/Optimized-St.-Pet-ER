@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import '../styles/login.css';
+import log_styles from '../styles/login.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "react-router-dom"
@@ -26,7 +26,7 @@ const Login = () => {
 
     return (
         <>
-        <form className="logcontainer">
+        <form className={log_styles.logcontainer}>
           <h1>Sign in to get started</h1>
           
           <label htmlFor="Email">Email:</label>

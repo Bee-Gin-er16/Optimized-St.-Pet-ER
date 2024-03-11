@@ -11,6 +11,7 @@
     font-family: var(--default-font);
 }
 
+
 .homepage h1,header {
     text-align: center;
 }
@@ -29,7 +30,7 @@ header {
     align-items: center;
 }
 
-img.brand-logo-nav {
+img.brand_logo_nav {
     height: 6dvh;
     width: 10dvw;
     margin-left: var(--space-header-elem);
@@ -89,6 +90,11 @@ nav ul:hover{
 
 .profile_cred {
     display: inline-block;
+}
+
+.profile_cred h1, h2, h3, a {
+    text-align: unset;
+    padding: unset;
 }
 
 .profile_img img{

@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import '../styles/login.css';
+import log_style from '../styles/login.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 
@@ -15,7 +15,7 @@ const Register = () => {
   
     return (
       <>
-      <form className="logcontainer">
+      <form className={log_style.logcontainer}>
         <h2>Registration </h2>
         <label htmlFor="name">Name:</label>
         <input type="text" placeholder="Enter your name"

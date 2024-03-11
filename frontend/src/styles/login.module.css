@@ -8,23 +8,6 @@
     font-family: var(--default-font);
 }
 
-form h1, h2, h3, a{
-    text-align: center;
-    padding: 2dvh 0;
-}
-
-label {
-    display: inline-block;
-    padding: 1dvh 0dvh;
-}
-
-input {
-    display: inline;
-    height: 4dvh;
-    font-size: medium;
-    width: 30dvw;
-}
-
 .logcontainer {
     display: grid;
     place-content: center;
@@ -37,7 +20,31 @@ input {
     box-shadow: 5px 8px #888888
 }
 
-input[type="submit"] , button{
+form .logcontainer{
+    text-align: center;
+}
+
+.logcontainer h1, 
+.logcontainer h2, 
+.logcontainer h3, 
+.logcontainer a{
+    text-align: center;
+    padding: 2dvh 0;
+}
+
+.logcontainer label {
+    display: inline-block;
+    padding: 1dvh 0dvh;
+}
+
+.logcontainer input {
+    display: inline;
+    height: 4dvh;
+    font-size: medium;
+    width: 30dvw;
+}
+
+.logcontainer input[type="submit"] ,.logcontainer button{
     margin: 1dvh 5dvw 0 5dvw;
     height: 5dvh;
     font-weight: bold;
@@ -45,17 +52,17 @@ input[type="submit"] , button{
     width: 20dvw;
 }
 
-button {
+.logcontainer button {
     margin: 2dvh 5dvw;
     background-color: rgb(185, 180, 180);
     border: 1px solid gray;
 }
 
-a {
+.logcontainer a {
     margin: 2dvh;
 }
 
-.icon-wrapper {
+.logcontainer button.placement .icon-wrapper {
     display: flex;
     justify-content: center;
     /* border: 1px solid black; */
@@ -63,12 +70,12 @@ a {
     width: 20dvw;
 }
 
-.icon-wrapper label {
+.logcontainer button.placement .icon-wrapper label {
     display: inline;
     padding-left: 2dvw;
 }
 
-button.placement{
+.logcontainer button.placement{
     display: grid;
     place-content: center;
     padding: 20px;
