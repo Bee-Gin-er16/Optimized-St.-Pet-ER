@@ -3,7 +3,9 @@
 //Component imports
 // import Intro from './pages/Intro_page'
 // Login, Counter
-import { Header, Home, Profile} from './components/dashboard_comps';
+import { Profile } from './components/profile';
+import { Header } from './components/header'
+import { Home } from './components/home'
 import { Login } from './components/login_form';
 import { Register } from './components/registration_form';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

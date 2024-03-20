@@ -11,15 +11,20 @@
     font-family: var(--default-font);
 }
 
+/* Home CSS
+.homepage {
+    background-color: white;
+    margin: 0 var(--space-header-elem) ;
+    height: 90dvh;
+}
 
 .homepage h1,header {
     text-align: center;
 }
+Home CSS End*/
 
-hr {
-    border: 1px solid black;
-}
 
+/* Header CSS
 header {
     padding: 1dvh 0;
     width: 100%;
@@ -53,11 +58,9 @@ nav ul:hover{
     border-radius: 4px;
 }
 
-.homepage {
-    background-color: white;
-    margin: 0 var(--space-header-elem) ;
-    height: 90dvh;
-}
+Header CSS End*/
+
+
 
 .profile_contents {
     display: flex;

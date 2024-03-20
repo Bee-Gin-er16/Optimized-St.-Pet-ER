@@ -1,8 +1,8 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import log_styles from '../styles/login.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGoogle } from '@fortawesome/free-brands-svg-icons'
-import { Link } from "react-router-dom"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGoogle } from '@fortawesome/free-brands-svg-icons'
+// import { Link } from "react-router-dom"
 
 const Login = () => {
     const [Email, setEmail] = useState('');

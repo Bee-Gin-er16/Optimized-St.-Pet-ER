@@ -1,0 +1,18 @@
+:root {
+    --default-font: Arial, Helvetica, sans-serif;
+    --border-check: 2px solid red;
+    --border-check2: 2px solid blue;
+    --border-check3: 2px solid orange;
+    --height-space: 10dvh;
+    --space-header-elem: 6dvw
+}
+
+.homepage {
+    background-color: white;
+    margin: 0 var(--space-header-elem) ;
+    height: 90dvh;
+}
+
+.homepage h1,header {
+    text-align: center;
+}

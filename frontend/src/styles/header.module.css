@@ -1,0 +1,45 @@
+:root {
+    --default-font: Arial, Helvetica, sans-serif;
+    --border-check: 2px solid red;
+    --border-check2: 2px solid blue;
+    --border-check3: 2px solid orange;
+    --height-space: 10dvh;
+    --space-header-elem: 6dvw
+}
+
+header {
+    padding: 1dvh 0;
+    width: 100%;
+    background: rgb(13,132,4);
+    background: linear-gradient(0deg, rgba(13,132,4,0.9921218487394958) 0%, rgba(69,162,39,1) 56%, rgba(141,201,83,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+img.brand_logo_nav {
+    height: 6dvh;
+    width: 10dvw;
+    margin-left: var(--space-header-elem);
+    background: rgba(196, 241, 196, 0.53)
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: var(--space-header-elem);
+}
+
+nav ul, nav span{
+    padding: 1dvh 1dvw;
+}
+
+nav ul:hover{
+    background-color: rgb(141, 247, 135);
+    border-radius: 4px;
+}
+
+hr {
+    border: 1px solid black;
+}
