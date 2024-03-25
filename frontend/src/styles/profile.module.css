@@ -81,6 +81,14 @@ Header CSS End*/
     background-color: skyblue;
 }
 
+.pet_profile img{
+    display: inline;
+    border-radius: 30px;
+    margin: 2dvh 2dvw;
+    height: 26dvh;
+    width: 13dvw;
+}
+
 .profile_bg {
     background-color: aquamarine;
     margin: 2vh 1dvw;
@@ -89,6 +97,7 @@ Header CSS End*/
 
 .profile_img {
     display: inline-block;
+    /* box-shadow: 3px 10px; */
 }
 
 .profile_cred {
@@ -99,7 +108,7 @@ Header CSS End*/
 
 .profile_cred h1, h2, h3, a {
     text-align: left;
-    padding: auto;
+    padding: 0 0 5px 0;
 }
 
 .profile_img img{
@@ -109,6 +118,7 @@ Header CSS End*/
     height: 25dvh;
     width: 10dvw;
 }
+
 
 /* .user_profile h1{
     display: inline;

@@ -9,8 +9,8 @@
 
 .homepage {
     background-color: white;
-    margin: 0 var(--space-header-elem) ;
-    height: 90dvh;
+    /* margin: 0 var(--space-header-elem); */
+    height: 100dvh;
 }
 
 .homepage h1,header {
