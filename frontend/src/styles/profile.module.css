@@ -64,19 +64,19 @@ Header CSS End*/
 
 .profile_contents {
     display: flex;
-    border: var(--border-check);
+    /* border: var(--border-check); */
     height: 100dvh;
     overflow: hidden;
 }
 
 .user_profile {
-    border: var(--border-check2);
+    /* border: var(--border-check2); */
     flex: 1;
     background-color: white;
 }
 
 .pet_profile {
-    border: var(--border-check3);
+    /* border: var(--border-check3); */
     flex: 1;
     background-color: skyblue;
 }

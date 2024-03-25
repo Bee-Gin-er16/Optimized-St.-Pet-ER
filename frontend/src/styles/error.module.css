@@ -1,0 +1,15 @@
+.error_box {
+    width: 100%;
+    height: 95dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    overflow: hidden;
+}
+
+.error_box h1 {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}

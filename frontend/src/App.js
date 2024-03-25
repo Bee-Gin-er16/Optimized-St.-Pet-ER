@@ -8,12 +8,14 @@ import { Header } from './components/header'
 import { Home } from './components/home'
 import { Login } from './components/login_form';
 import { Register } from './components/registration_form';
+import { ErrorPage } from './components/errorpage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const myroute = createBrowserRouter([
   {
     path: "/",
-    element: <Login/>
+    element: <Login/>,
+    errorElement: <ErrorPage/>
   },
   {
     path: "/register",
