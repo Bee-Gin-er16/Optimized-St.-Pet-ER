@@ -16,6 +16,8 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    height: 3rem;
+    font-size: 1.5rem;
 }
 
 img.brand_logo_nav {
@@ -25,17 +27,29 @@ img.brand_logo_nav {
     background: rgba(196, 241, 196, 0.53)
 }
 
+header span {
+    display: flex;
+    flex-direction: row;
+    gap: 2dvw;
+
+}
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-right: var(--space-header-elem);
 }
 
-nav ul, nav span{
+nav ul li{
     padding: 1dvh 1dvw;
+    list-style-type: none;
 }
 
-nav ul:hover{
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li:hover{
     background-color: rgb(141, 247, 135);
     border-radius: 4px;
 }

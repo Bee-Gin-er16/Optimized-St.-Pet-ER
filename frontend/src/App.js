@@ -9,7 +9,7 @@ import { Home } from './components/home'
 import { Login } from './components/login_form';
 import { Register } from './components/registration_form';
 import { ErrorPage } from './components/errorpage'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
 const myroute = createBrowserRouter([
   {
@@ -31,11 +31,21 @@ const myroute = createBrowserRouter([
   }
 ]);
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Header name="" />}>
+      <Route index element={<Home isNotLoggedIn={false} />}/>
+      <Route path="login" element={<Login />}/>
+      <Route path="register" element={<Register />}/>
+      <Route path="profile" element={<Profile />}/>
+    </Route>
+  )
+)
+
 function App() {
   return (
     <div className="App">
-      <Header name="" />
-      <RouterProvider router={myroute}/>
+      <RouterProvider router={router}/>
     </div>
   );
 }
