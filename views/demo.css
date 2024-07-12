@@ -1,3 +1,7 @@
+:root {
+    --gap_dist: 40px;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -6,16 +10,37 @@
 
 nav {
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 nav #branding {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: var(--gap_dist);
+}
+
+nav #account_buttons {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    /* border: 1px solid green; */
+}
+
+#account_buttons button{
+    padding: 2% 10%;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
 }
