@@ -42,5 +42,15 @@ nav #account_buttons {
 
 #hero {
     display: flex;
-    align-items: center;
+    padding: 3rem 5rem;
+    justify-content: space-between;
+    align-items: start;
+    /* background-image: linear-gradient(rgba(224, 175, 175, 0.5), rgba(255,255,255,.5)) ,url(/public/assets/img/pet_and_owner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+}
+
+#hero img {
+    background: transparent;
+    height: 36rem;
 }
